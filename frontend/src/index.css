@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --red:       #C0261E;
+  --red2:      #A01F18;
+  --red3:      #8B1A13;
+  --gold:      #D4AF37;
+  --gold2:     #F0C93A;
+  --navy:      #0A1628;
+  --navy2:     #112040;
+  --accent:    #1E4FD8;
+  --surface:   #F7F8FC;
+  --surface2:  #EEF1F8;
+  --text:      #0A1628;
+  --text2:     #4A5568;
+  --text3:     #8896A8;
+  --green:     #0B6E4F;
+  --green-bg:  #E6F4EF;
+  --bred:      #C0392B;
+  --red-bg:    #FDECEA;
+  --blue:      #1A56DB;
+  --blue-bg:   #EBF2FF;
+  --orange:    #C05621;
+  --orange-bg: #FEF0E6;
+  --radius:    14px;
+  --rsm:       8px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--surface);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
+img { max-width: 100%; }
+
+.btn-gold {
+  background: var(--gold);
+  color: var(--navy);
+  padding: .7rem 1.6rem;
+  border-radius: var(--rsm);
+  font-weight: 700;
+  font-size: .88rem;
+  border: none;
+  transition: all .2s;
+}
+.btn-gold:hover { background: var(--gold2); transform: translateY(-1px); }
+
+.btn-outline-white {
+  background: transparent;
+  color: #fff;
+  padding: .7rem 1.6rem;
+  border-radius: var(--rsm);
+  font-weight: 500;
+  font-size: .88rem;
+  border: 1.5px solid rgba(255,255,255,0.35);
+  transition: all .2s;
+}
+.btn-outline-white:hover {
+  border-color: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.07);
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sec-tag {
+  font-size: .7rem;
+  font-weight: 700;
+  color: var(--red);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: .4rem;
+}
+
+.sec-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -.3px;
+  margin-bottom: .35rem;
+}
+
+.sec-sub {
+  color: var(--text2);
+  font-size: .88rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--red); border-radius: 3px; }
