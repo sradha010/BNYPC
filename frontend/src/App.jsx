@@ -5,7 +5,7 @@ import Home from './pages/Home'
 import Drives from './pages/Drives'
 import About from './pages/About'
 import WhatsAppButton from './components/WhatsAppButton'
-import Results from './pages/Reults'
+import Results from './pages/Results'
 
 export default function App() {
   return (
